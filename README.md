@@ -1,4 +1,4 @@
-# youtube-devmeetup-vuetify
+# devmeetup-vuetify
 
 > A dev meeting application buit with Vue + Vvetify + Firebase
 

@@ -3,6 +3,8 @@ import App from './App'
 import router from './router'
 import { store } from './store'
 
+import DateFilter from './filters/date'
+
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import colors from 'vuetify/es5/util/colors'
@@ -17,6 +19,8 @@ Vue.use(Vuetify, {
     success: colors.green.lighten2
   }
 })
+
+Vue.filter('date', DateFilter)
 
 Vue.config.productionTip = false
 

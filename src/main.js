@@ -2,9 +2,10 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import { store } from './store'
+import firebase from 'firebase'
 
 import DateFilter from './filters/date'
-import * as firebase from 'firebase'
+import ErrorAlert from './components/Shared/ErrorAlert.vue'
 
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
@@ -22,6 +23,7 @@ Vue.use(Vuetify, {
 })
 
 Vue.filter('date', DateFilter)
+Vue.component('err-alert', ErrorAlert)
 
 Vue.config.productionTip = false
 

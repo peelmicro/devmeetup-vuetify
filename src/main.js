@@ -6,6 +6,7 @@ import firebase from 'firebase'
 
 import DateFilter from './filters/date'
 import ErrorAlert from './components/Shared/ErrorAlert.vue'
+import EditMeetupDetailsDialog from './components/Meetup/Edit/EditMeetupDetailsDialog.vue'
 
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
@@ -24,6 +25,7 @@ Vue.use(Vuetify, {
 
 Vue.filter('date', DateFilter)
 Vue.component('err-alert', ErrorAlert)
+Vue.component('app-edit-meetup-details-dialog', EditMeetupDetailsDialog)
 
 Vue.config.productionTip = false
 
